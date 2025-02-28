@@ -9,15 +9,14 @@
 <body>
 	<ul>
 		<li><a href="{{url_for('index')}}">Home</a></li>
-		<li><a href="{{ url_for('login')}}">Login</a></li>
-		<li><a href="{{ url_for('show_user')}}">User credentials</a></li>
+		<li><a href="{{ url_for('login')}}">Order</a></li>
 	</ul>
 
 	<div class="login-container">
 		<div class="overlay-text" style="font-size: 20px; font-weight: bolder;">
-			Startling Hub</div>
+			
 		<div class="login-box">
-		  <h2>Login</h2>
+		  <h2 style="color: black;">Order Your Product</h2>
 		  <form action="{{ url_for('login') }}" method="POST">
 			<input type="text" name="username" placeholder="Username" required>
 			<input type="text" name="username2" placeholder="Product" required>
