@@ -42,7 +42,7 @@ def index():
 def index2():
     return render_template('index2.html')
 
-@app.route('/Login', methods=['GET', 'POST'])
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -64,7 +64,7 @@ def login():
     return render_template('login.html')
 
 
-@app.route('/user')
+@app.route('/user7865')
 def show_user():
     users = User.query.all()
     return render_template('user.html',users=users)
